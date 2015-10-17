@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Selenium.WebDriver.IEDriver64</id>
+    <version>2.48.0.0</version>
+    <authors>jsakamoto</authors>
+    <summary>Selenium Internet Explorer Driver (64 bit) (this package does not make your source repository to fat.)</summary>
+    <description>
+      Install IE Driver(x64) for Selenium WebDriver into your Unit Test Project.
+      "IEDriverServer.exe" added as a linked project item, and copied to bin folder at the build.
+      NuGet package restoring ready, and no need to commit "IEDriverServer64.exe" binary into source code control repository.
+      / The installing/uninstalling script codes that contained this package are free and unencumbered software released into the public domain.
+      / "iedriverserver64.exe" is licensed under the Apache license v.2.0.
+    </description>
+    <language>en-US</language>
+    <projectUrl>https://github.com/cchitsiang/nuget-selenium-webdriver-iedriver/</projectUrl>
+    <licenseUrl>http://unlicense.org/UNLICENSE</licenseUrl>
+    <tags>Selenium WebDriver IEDriverServer64</tags>
+    <releaseNotes>
+      <![CDATA[
+      v.2.48
+	  - IE Driver 2.48 release
+      ]]>
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="README-IEDriver64.txt" target="content"/>
+    <file src="IEDriverServer64.exe" target="driver"/>
+    <file src="Install.ps1" target="tools"/>
+    <file src="Uninstall.ps1" target="tools"/>
+  </files>
+</package>

@@ -1,4 +1,4 @@
-# NuGet package - Selenium WebDriver IEDriver
+﻿# NuGet package - Selenium WebDriver IEDriver
 
 [![NuGet Package](https://img.shields.io/nuget/v/Selenium.WebDriver.IEDriver.svg)](https://www.nuget.org/packages/Selenium.WebDriver.IEDriver/)
 
@@ -46,3 +46,5 @@ folder.
 
  And package installer configure msbuild task such as .csproj to
  copy IEDriverServer.exe into output folder during build process.
+
+### Big credit to jsakamoto.
