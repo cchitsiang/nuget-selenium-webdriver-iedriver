@@ -1,7 +1,9 @@
 # constants
-$version = "2.53"
+$version = "3.0"
+$build = "0"
+$driverNameInZip = "IEDriverServer.exe"
 $driverName = "IEDriverServer64.exe"
-$zipName = "IEDriverServer_x64_$version.0.zip"
+$zipName = "IEDriverServer_x64_$version.$build.zip"
 $downloadurl = "https://selenium-release.storage.googleapis.com/$version/$zipName"
 
 # move current folder to where contains this .ps1 script file.
@@ -23,10 +25,12 @@ if (-not (Test-Path ".\$driverName")) {
     $zipFile = $shell.NameSpace($zipPath)
 
     $zipFile.Items() | `
-    where {(Split-Path $_.Path -Leaf) -eq $driverName} | `
+    where {(Split-Path $_.Path -Leaf) -eq $driverNameInZip} | `
     foreach {
-        $cuurentDir = $shell.NameSpace((Convert-Path "."))
-        $cuurentDir.copyhere($_.Path)
+        $currentDir = $shell.NameSpace((Convert-Path "."))
+        $currentDir.copyhere($_.Path)
     }
     sleep(2)
+	
+	Rename-Item -Path ".\$driverNameInZip" -NewName ".\$driverName"
 }
