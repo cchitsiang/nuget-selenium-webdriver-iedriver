@@ -1,6 +1,6 @@
 ﻿# NuGet package - Selenium WebDriver IEDriver
 
-[![NuGet Package](https://img.shields.io/nuget/v/Selenium.WebDriver.IEDriver.svg)](https://www.nuget.org/packages/Selenium.WebDriver.IEDriver64/)
+[![NuGet Package](https://img.shields.io/nuget/v/Selenium.WebDriver.IEDriver64.svg)](https://www.nuget.org/packages/Selenium.WebDriver.IEDriver64/)
 
 ## What's this? / これは何?
 
@@ -58,7 +58,7 @@ If you want to include "IEDriverServer64.exe" into published files, please defin
 
 "IEDriverServer64.exe" を発行ファイルに含めるには、コンパイル定数 `_PUBLISH_IEDRIVER64` を定義してください。
 
-![define _PUBLISH_IEDRIVER64 compilation symbol](.asset/define_PUBLISH_IEDRIVER_compilation_symbol.png)
+![define _PUBLISH_IEDRIVER64 compilation symbol](.asset/define_PUBLISH_IEDRIVER64_compilation_symbol.png)
 
 Another way, you can define `PublishIEDriver64` property with value is "true" in MSBuild file (.csproj, .vbproj, etc...) to publish the driver file instead of define compilation symbol.
 
