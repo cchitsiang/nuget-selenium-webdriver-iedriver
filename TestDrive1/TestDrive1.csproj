@@ -36,7 +36,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;_PUBLISH_IEDRIVER</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;_PUBLISH_IEDRIVER64; _PUBLISH_IEDRIVER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
