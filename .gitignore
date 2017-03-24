@@ -7,3 +7,6 @@ packages/
 publish/
 /dist/.gitignore
 /downloads/.gitignore
+/dist/*.nupkg
+/downloads/*.exe
+/downloads/*.zip
