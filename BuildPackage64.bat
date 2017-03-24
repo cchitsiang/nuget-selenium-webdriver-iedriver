@@ -2,9 +2,9 @@
 pushd %~dp0
 
 echo Downloading %fname%...
-REM powershell -noprof -exec unrestricted -c ".\download-driver.ps1"
+powershell -noprof -exec unrestricted -c ".\buildTools\download-driver64.ps1"
 echo.
 :SKIP_DOWNLOAD
 
 echo Packaging...
-.\NuGet.exe pack .\Selenium.WebDriver.IEDriver64.nuspec
+.\buildTools\NuGet.exe pack .\src\Selenium.WebDriver.IEDriver64.nuspec -Out .\dist
