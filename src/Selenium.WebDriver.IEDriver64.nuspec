@@ -2,14 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Selenium.WebDriver.IEDriver64</id>
-    <version>3.11.0.1</version>
-    <authors>jsakamoto</authors>
-    <summary>Selenium Internet Explorer Driver (64 bit) (this package does not make your source repository to fat.)</summary>
+    <version>3.141.59.0</version>
+    <authors>jsakamoto/cchitsiang</authors>
+    <summary>Selenium Internet Explorer Driver (64 bit) (this package does not make your source repository too fat.)</summary>
     <description>
       Install IE Driver(x64) for Selenium WebDriver into your Unit Test Project.
-      "IEDriverServer64.exe" added as a linked project item, and copied to bin folder at the build.
+      "IEDriverServer64.exe" is copied to bin folder from package folder when the build process.
       NuGet package restoring ready, and no need to commit "IEDriverServer64.exe" binary into source code control repository.
-      / The installing/uninstalling script codes that contained this package are free and unencumbered software released into the public domain.
+      / The MSBuild script that contained this package is free and unencumbered software released into the public domain.
       / "iedriverserver64.exe" is licensed under the Apache license v.2.0.
     </description>
     <language>en-US</language>
@@ -18,6 +18,8 @@
     <tags>Selenium WebDriver IEDriverServer64</tags>
     <releaseNotes>
       <![CDATA[
+      v.3.141.59
+	  - IE Driver 3.141.59 release
       v.3.11.0.1
 	  - IE Driver 3.11.0 release
       v.3.3.0.1
